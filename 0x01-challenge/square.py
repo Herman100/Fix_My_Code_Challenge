@@ -4,7 +4,6 @@
 
 class Square():
     """A class to represent a square."""
-
     width = 0
     height = 0
 
