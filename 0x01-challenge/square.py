@@ -1,32 +1,31 @@
-#!/usr/bin/python3
-"""A class to represent a square."""
+"""This module provide a Class to instance geometry objects"""
 
 
 class Square():
-    """A class to represent a square."""
-
+    """Provide methods fto calculate of the are and perimiter"""
     width = 0
+    height = 0
 
     def __init__(self, *args, **kwargs):
-        """Initialize square with given width."""
+        """Constructor definition"""
         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def area_of_my_square(self):
-        """Calculate and return the area of the square."""
-        return self.width ** 2
+        """Area of the square"""
+        return self.width * self.height
 
-    def perimeter_of_my_square(self):
-        """Calculate and return the perimeter of the square."""
-        return self.width * 4
+    def permiter_of_my_square(self):
+        """Permiter of my square"""
+        return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """Return a string representation of the square."""
-        return str(self.width)
+        """Representing of my object"""
+        return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
-    s = Square(width=12)
+    s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
-    print(s.perimeter_of_my_square())
+    print(s.permiter_of_my_square())
