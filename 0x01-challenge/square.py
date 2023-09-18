@@ -1,5 +1,4 @@
-#!/usr/bin/python3
-"""A class module to represent a square."""
+"""A module to represent a square when printed by accepting args."""
 
 
 class Square():
